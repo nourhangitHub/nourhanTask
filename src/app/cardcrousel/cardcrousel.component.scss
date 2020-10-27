@@ -1,0 +1,24 @@
+.cardContainer{
+    margin: 5% 0;
+    text-align: right;
+    .carousel-title{
+        color: var(--main-color);
+        font-weight: 700;
+        font-size: 1.5rem;
+        margin: 2% 0;
+    }
+    .card{
+        background-color: rgb(215, 221, 223);
+        justify-content: end;
+        min-height: 330px;    
+        i{
+            font-size: 3rem;
+            padding-top: 1rem;
+            color: var(--main-color);
+            padding-right: 10px;
+        }
+        .card-title{
+            color:var(--main-color);
+        }
+    }
+}

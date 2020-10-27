@@ -1,0 +1,48 @@
+<nav class="navbar navbar-expand-lg ">
+    <a class="navbar-brand" href="#">
+      <img src="../../assets/images/logo-light.svg">
+    </a>
+    <button (click)="toggle()" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"><i class="fas fa-bars"></i></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent" [class.show]="isOpen">
+      <ul class="navbar-nav">
+        <li class="nav-item ">
+          <a class="nav-link" routerLink="home" routerLinkActive="active">الرئيسية <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">الخدمات</a>
+        </li>
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" routerLink="tracker" routerLinkActive="active" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           الشحنات
+          </a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a ngbDropdownItem class="dropdown-item" href="#">طلب جديد</a>
+            <a ngbDropdownItem class="dropdown-item" routerLink="tracker" routerLinkActive="active">تتبع الشحنات</a>
+            <a ngbDropdownItem class="dropdown-item" href="#">حساب تكلفة الشحنة</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="office" routerLinkActive="active">المكاتب</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">الاخبار</a>
+        </li>
+        <li ngbDropdown class="nav-item dropdown">
+          <a ngbDropdownToggle class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+           عن البريد العراقي
+          </a>
+          <div ngbDropdownMenu class="dropdown-menu" aria-labelledby="navbarDropdown">
+            <a ngbDropdownItem class="dropdown-item" href="#">Action</a>
+            <a ngbDropdownItem class="dropdown-item" href="#">Another action</a>
+            <a ngbDropdownItem class="dropdown-item" href="#">Something else here</a>
+          </div>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">تواصل معنا</a>
+        </li>
+      </ul>
+    </div>
+  </nav>

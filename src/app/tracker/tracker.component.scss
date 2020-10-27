@@ -1,0 +1,68 @@
+.tracker-container{
+    text-align: right;
+    margin: 5% 0;
+    .track-title{
+        color: #2b3f79;
+    }
+    .card{
+        form{
+            margin: 3% 10%;
+            direction: rtl;
+        }
+        .card-header{
+            color: #fff;
+            background-color: var(--main-color);
+        }
+        .btn-warning{
+            border-radius: 20px;
+        }
+        .tracker-view{
+            margin: 3% 0;
+            color: gray;
+            padding: 3%;
+            .state{
+                color: var(--second-color);;
+            }
+            .progressbar li{
+                list-style: none;
+                float: right;
+                text-align: center;
+                width: 20%;
+                position: relative;
+                &.active{
+                    img{
+                        border: 1px solid var(--second-color);;
+                    }
+                }
+                &.complete{
+                    img{
+                        background-color: var(--second-color);;
+                    }
+                }
+                &.active + li::after{
+                    background-color: var(--second-color);;
+                }
+                &:first-child::after{
+                    content: none;
+                }
+                &::after{
+                    content: '';
+                    position: absolute;
+                    width: 100%;
+                    height: 1px;
+                    top: 25px;
+                    z-index: 1;
+                    background-color: gray;
+                }
+                img{
+                    border: 1px solid gray;
+                    padding: 10px;
+                    z-index: 88;
+                    background-color: white;
+                    border-radius: 25px;
+                }
+            }
+        }
+        
+    }
+}

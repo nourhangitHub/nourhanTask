@@ -1,0 +1,49 @@
+.office-container{
+    margin: 5% 0;
+    text-align: right;
+    .office-title{
+        color:var(--main-color);    }
+    p{
+      color:gray;  
+    }
+    form{
+        margin: 5% 0;
+        direction: rtl;
+        .form-button{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+            .btn{
+                color:var(--main-color);                
+                width: 100px;
+                border-radius: 20px;
+            }
+        }
+        input{
+            padding: 5px;
+            &#country {
+                background-image: url(../../assets/images/room-24.svg);
+                background-repeat: no-repeat;
+                text-indent: 20px;
+            }
+           &#services {
+                background-image: url(../../assets/images/clipboard_alt.svg);
+                background-repeat: no-repeat;
+                text-indent: 20px;
+            }
+        }
+    }
+    .map-container img{
+        height: 930px;
+        width: 800px;
+    }
+    .information-container{
+        a{
+            color: gray;
+            font-size: 10px;
+            margin-right: 5px;
+            text-decoration: underline;
+        }
+    }
+
+}

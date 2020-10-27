@@ -1,0 +1,59 @@
+<div class="container office-container">
+    <h2 class="office-title m-3">المكاتب البريدية</h2>
+    <p class="m-3">مواعيد الدوام الرسمية من الاحد الي الخميس من الساعة 8:00 صباحا الي 2:30 مساء</p>
+    <form #officeForm="ngForm">
+        <div class="form-row">
+        <div class="col">
+            <input id="country" type="text" class="form-control" ngModel name="country" placeholder="اسم المحافظة">
+        </div>
+          <div class="col">
+            <input id="services" type="text" class="form-control" ngModel name="services" placeholder="نوع الخدمة">
+          </div>
+          <div class="col">
+            <div class="form-button">
+                <button class="btn btn-light"> اعادة تعين</button>
+                <button class="btn btn-warning">اعرض</button>
+            </div>
+          </div>
+        </div>
+      </form>
+    <div class="d-flex flex-row">
+        <div class="map-container">
+            <img class="img-fluid" src="../../assets/images/trackmap.png" alt="map">
+        </div>
+        <div class="information-container">
+            <div class="card bg-light" style="max-width: 20rem;">
+                <div class="card-header office-title">مكتب بريد الرشاد</div>
+                <div class="card-body">
+                  <p class="card-title">بغداد اليرموك<img src="../../assets/images/room-24.svg"></p>
+                  <p class="card-text">96675450000000<img src="../../assets/images/call-24px.svg"></p>
+                  <p class="card-text">96675450000000<img src="../../assets/images/printshop.svg"></p>
+                  <p class="card-text">info@gmail.com<img src="../../assets/images/email-24px.svg"></p>
+                  <p class="card-title office-title">خدمات المكتب</p>
+                  <a href="#"> الصندوق الاقتراضي </a> <a href="#"> النافذة الواحدة </a> <a href="#"> التجارة الالكترونية </a>
+                  <div class="dropdown-divider"></div>
+                  <div class="card-title">مكتب بريد الرياض</div>
+                  <p class="card-title">بغداد اليرموك<img src="../../assets/images/room-24.svg"></p>
+                  <p class="card-text">96675450000000<img src="../../assets/images/call-24px.svg"></p>
+                  <p class="card-text">96675450000000<img src="../../assets/images/printshop.svg"></p>
+                  <p class="card-text">info@gmail.com<img src="../../assets/images/email-24px.svg"></p>
+                  <p class="card-title">خدمات المكتب</p>
+                  <a href="#"> الصندوق الاقتراضي </a> <a href="#"> النافذة الواحدة </a> <a href="#"> التجارة الالكترونية </a>
+                  <div class="dropdown-divider"></div>
+                  <div class="card-title">مكتب بريد الانتصار</div>
+                  <p class="card-title">بغداد اليرموك<img src="../../assets/images/room-24.svg"></p>
+                  <p class="card-text">96675450000000<img src="../../assets/images/call-24px.svg"></p>
+                  <p class="card-text">96675450000000<img src="../../assets/images/printshop.svg"></p>
+                  <p class="card-text">info@gmail.com<img src="../../assets/images/email-24px.svg"></p>
+                  <p class="card-title">خدمات المكتب</p>
+                  <a href="#"> الصندوق الاقتراضي </a> <a href="#"> النافذة الواحدة </a> <a href="#"> التجارة الالكترونية </a>
+                </div>
+                <div class="card-footer">
+                    <img src="../../assets/images/room-24.svg"><img src="../../assets/images/printshop.svg">
+                  </div>
+              </div>
+        </div>
+    </div>
+    <app-banner></app-banner>
+</div>
+

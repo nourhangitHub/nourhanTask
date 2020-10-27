@@ -1,0 +1,24 @@
+nav{
+    direction: rtl;
+    background-color: var(--main-color);
+    z-index: 1;
+    ul li a{
+        color: white;
+    }
+    .content{
+        color: white;
+    }
+}
+
+@media (max-width: 1000px){
+    nav{
+        ul{
+            flex-direction: row;
+            justify-content: space-between;
+            li{
+                padding: 5px;
+            }
+        }
+        
+    }
+  }

@@ -1,0 +1,38 @@
+.device-container{
+    margin: 5% 0;
+    text-align: right;
+    flex-direction: row;
+    .app-online{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .device-title{
+        color: var(--main-color);
+    }
+    .device-body{
+        color: var(--second-color);
+    }
+}
+
+@media (max-width: 1200px){
+    .device-container{
+        flex-direction: column;
+        .app-online{
+            flex-direction: row;
+        }
+    }
+  }
+
+  @media (max-width: 995px){
+    .device-container{
+        flex-direction: column;
+        .app-online{
+            .dwonload-app{
+                .btn{
+                  width: 100px;  
+                }
+            }
+        }
+    }
+  }

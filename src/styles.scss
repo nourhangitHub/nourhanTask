@@ -1,1 +1,55 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import '~bootstrap/scss/bootstrap';
+//@import '../src/assets/scss/variables';
+
+:root 
+{
+    --main-color:#2b3f79;
+    --second-color:#FFA201;
+}
+app-mainpage > app-maincrousel > ngb-carousel > ol {
+    bottom: 23% !important;
+    left: 50% !important;
+}
+.carousel-indicators li {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    margin: 4px;
+    text-indent: 0;
+    cursor: pointer;
+    border: none;
+    border-radius: 50%;
+    background-color:  rgba(0, 0, 0, 0.1);
+    box-shadow: inset 1px 1px 1px 1px rgba(0,0,0,0.5);    
+}
+.carousel-indicators .active {
+    width: 15px;
+    height: 10px;
+    margin: 4px;
+    background-color: var(--second-color);
+}
+app-cardcrousel > div > owl-carousel-o > div > div.owl-nav.ng-star-inserted > div.owl-prev {
+    display: none;
+}
+app-cardcrousel > div > owl-carousel-o > div > div.owl-nav.ng-star-inserted > div.owl-next {
+    display: none;
+}
+app-cardcrousel > div > owl-carousel-o > div > div.owl-stage-outer.ng-star-inserted > owl-stage > div > div > div.owl-item.ng-tns-c18-0.ng-trigger.ng-trigger-autoHeight.ng-star-inserted.active.center > div{
+    background-color:var(--main-color);
+    color: white;
+    i{
+        color: var(--second-color);
+    }
+    .card-title{
+        color: var(--second-color);
+    }
+}
+app-cardcrousel > div > owl-carousel-o > div > div.owl-dots.ng-star-inserted > div.owl-dot.active.ng-star-inserted > span{
+    width: 15px;
+    height: 10px;
+    margin: 4px;
+    background-color:var(--main-color);
+}

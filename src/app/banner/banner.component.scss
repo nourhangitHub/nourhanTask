@@ -1,0 +1,19 @@
+.container-banner{
+    text-align: right;
+    margin: 5% 0;
+    padding: 3% ;
+    border-radius: 5px;
+    color:var(--main-color);
+    background-color: rgb(247, 205, 219);
+    .btn-custom{
+        background-color:var(--main-color);
+        color: white;
+        position: relative;
+        top: 30px;
+        border-radius: 20px;
+        height: min-content;
+    }
+    .banner-title{
+        font-weight: 700;
+    }
+}

@@ -1,0 +1,20 @@
+nav {
+    direction: rtl;
+        ul{
+            li{
+                a{
+                    color: var(--main-color);
+                    font-weight: 500;
+                }
+            }
+        }
+    
+}
+.active{
+    background-color:var(--second-color);
+    border-radius: 3px;
+}
+
+#navbarSupportedContent  ul{
+    text-align: center;
+}
